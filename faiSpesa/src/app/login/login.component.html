@@ -1,0 +1,53 @@
+<div class="sfondo">
+    
+<div>
+    <label>Username</label>
+    <input #username type="text">
+</div>
+<div>
+    <label>Password</label>
+    <input #password type="password">
+</div>
+
+<button (click)="login(username.value, password.value)">Login</button>
+
+
+</div>
+
+<div id="modal-full-sign-in" class="uk-modal-full" uk-modal>
+    <div class="uk-modal-dialog">
+        <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+        <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+            <div class="uk-background-cover" style="background-image: url('assets/img/BG_login.jpg');"
+                uk-height-viewport>
+            </div>
+            <div class="uk-padding-large">
+                <h1 class="center">FaiSpesa</h1>
+                <h3 class="center">Accedi</h3>
+             <!--div username-->
+                <div class="uk-margin">
+                    <label class="uk-form-label simpleText black" for="form-stacked-text">Email</label>
+                    <div class="uk-form-controls">
+                        <label for="emailLogin"></label>
+                        <input class="uk-input" #username type="email" placeholder="Inserisci username">
+                    </div>
+            <!--div password-->
+                </div>
+                <div class="uk-margin">
+                    <label class="uk-form-label simpleText black" for="form-stacked-text">Password</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" #password type="password"
+                            placeholder="Inserisci password">
+                    </div>
+                </div>
+
+                <button (click)="login(username.value, password.value)" class="uk-button uk-button-primary button-modal">Accedi</button>
+                <button class="uk-button uk-button-primary button-modal hide">Logout</button>
+                <p class="simpleText center black"> oppure</p>
+                <a class="modal-linkText center" href="#">
+                    <p class="center">Crea account</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
