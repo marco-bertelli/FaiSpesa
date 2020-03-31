@@ -54,5 +54,22 @@ export class LoginServiceService {
     }
   }
 
+  registra(username:string,password:string){
+    let controllo=false;
+
+    this.gameList.forEach(element => {
+      if(element.username===username){
+        window.alert("attenzione utente già esistente!")
+        controllo=true;
+      }
+    });
+
+    if(controllo===false){
+    let temp:User={username,password,admin:false};
+    this.gameList.push(temp);
+    this.router.navigateByUrl("/home");
+    }
+ }
+
  
 }
