@@ -4,7 +4,7 @@
         <li routerLink="/scarica" routerLinkActive="active">Scarica</li>
         <li routerLink="/funzionalità" routerLinkActive="active">Funzionalità</li>
         <li routerLink="/Contatti" routerLinkActive="active">Contatti</li>
-        <li routerLink="/Registrati" routerLinkActive="active">Registrati</li>
-        <li routerLink="/login" routerLinkActive="active"><a class="uk-button uk-button-default login"uk-toggle>Accedi</a></li>
+        <li *ngIf="loggato()" routerLink="/Registrati" routerLinkActive="active">Registrati</li>
+        <li *ngIf="loggato()" routerLink="/login" routerLinkActive="active"><a class="uk-button uk-button-default login"uk-toggle>Accedi</a></li>
     </ul>
 </nav>
