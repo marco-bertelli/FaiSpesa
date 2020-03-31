@@ -1,14 +1,21 @@
 <div class="sfondo">
-    
-<div>
+  <div id="left">
+  </div>
+  <div id="center-top">
     <label>Username</label>
+      <br/>
     <input #username type="text">
-</div>
-<div>
+      <br/>
     <label>Password</label>
+      <br/>
     <input #password type="password">
+  </div>
+  <div id="right">
+  </div>
+  <div id="center-bottom">
+    <button (click)="login(username.value, password.value)">Login</button>
+  </div>
+
+
 </div>
-
-<button (click)="login(username.value, password.value)">Login</button>
-
 
