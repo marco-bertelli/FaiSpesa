@@ -6,5 +6,6 @@
         <li routerLink="/Contatti" routerLinkActive="active">Contatti</li>
         <li *ngIf="loggato()" routerLink="/Registrati" routerLinkActive="active">Registrati</li>
         <li *ngIf="loggato()" routerLink="/login" routerLinkActive="active"><a class="uk-button uk-button-default login"uk-toggle>Accedi</a></li>
+        <li><app-logout></app-logout></li>
     </ul>
 </nav>
