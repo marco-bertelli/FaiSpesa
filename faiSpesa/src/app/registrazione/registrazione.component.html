@@ -1,0 +1,12 @@
+<div class="sfondo">
+    
+    <div>
+        <label>Username</label>
+        <input #username type="text">
+    </div>
+    <div>
+        <label>Password</label>
+        <input #password type="password">
+    </div>
+    
+    <button (click)="registra(username.value, password.value)">Login</button>

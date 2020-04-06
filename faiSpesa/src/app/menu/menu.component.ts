@@ -11,5 +11,12 @@ export class MenuComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+loggato():boolean{
+  if(sessionStorage.getItem('user')!=null)return false;
+  else return true;
+}
+logout(){
+  if(sessionStorage.getItem('user')!=null)return true;
+  else return false;
+}
 }

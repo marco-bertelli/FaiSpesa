@@ -10,7 +10,7 @@ export class EditRouteGuard implements CanActivate {
   constructor(private router: Router) { }
 
   canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean | UrlTree | Observable<boolean | UrlTree> | Promise<boolean | UrlTree> {
-    if (sessionStorage.getItem('user') != null && sessionStorage.getItem('privilege')=='admin') {
+    if (sessionStorage.getItem('user') === null ) {
       return true;
     } else {
       this.router.navigateByUrl('/home');
