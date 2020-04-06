@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
 import { LogoutComponent } from './logout/logout.component';
 import { RegistrazioneComponent } from './registrazione/registrazione.component';
 
@@ -14,7 +15,8 @@ import { RegistrazioneComponent } from './registrazione/registrazione.component'
     MenuComponent,
     HomeComponent,
     LogoutComponent,
-    RegistrazioneComponent
+    RegistrazioneComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
