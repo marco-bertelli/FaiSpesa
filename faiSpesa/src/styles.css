@@ -13,6 +13,7 @@ nav {
     justify-content: flex-start;
     color: black;
     margin: 8px;
+   padding-bottom: 2px;
 }
 
 nav #ul-nav {
