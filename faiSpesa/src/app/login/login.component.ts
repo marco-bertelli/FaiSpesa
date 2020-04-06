@@ -16,9 +16,9 @@ export class LoginComponent implements OnInit {
   }
 
   login(username:string, password:string){
-    
+
     this.listaUtenti.eseguiLogin(username,password);
-    
+
   }
 
   loginS(username:string, password:string){
