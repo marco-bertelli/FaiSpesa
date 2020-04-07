@@ -1,0 +1,10 @@
+<div class="nav">
+    <ul>
+        <li><p>benvenuto {{utente}}</p></li>
+        <li routerLink="/list" routerLinkActive="active">Lista Spesa</li>
+
+        <!-- in caso funzionalità admin <li *ngIf="admin()" routerLink="/modifica" routerLinkActive="active">Modifica</li> -->
+        <li><app-logout></app-logout></li>
+    </ul> 
+</div>
+
