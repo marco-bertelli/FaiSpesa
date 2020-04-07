@@ -4,7 +4,8 @@
         <li class="elenco" routerLink="/scarica" routerLinkActive="active">Scarica</li>
         <li class="elenco" routerLink="/funzionalita" routerLinkActive="active">Funzionalità</li>
         <li class="elenco" routerLink="/Contatti" routerLinkActive="active">Contatti</li>
-        <li *ngIf="loggato()" routerLink="/login" routerLinkActive="active"><a class="bottone">Accedi</a></li>
+        <li *ngIf="loggato()" routerLink="/registrati" routerLinkActive="active"><a class="bottone2">Registrati</a></li>
+        <li *ngIf="loggato()" routerLink="/login" routerLinkActive="active"><a class="bottone1">Accedi</a></li>
         <li *ngIf="logout()"><app-logout></app-logout></li>
     </ul>
 </nav>

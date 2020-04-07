@@ -1,21 +1,57 @@
-.bottone{
+/* PULSANTE ACCEDI */
+
+.bottone1{
   display: flex;
   float:right;
-  color:rgb(85, 175, 223);
-  text-decoration: none;
-  font-weight: bold;
-  border: 1.6px solid white;
-  padding: 2px 7px;
-  border-radius: 4px;
-  transition: all 1.0s;
-  cursor: pointer;
-}
-.bottone:hover{
   color: white;
   background-color: rgb(85, 175, 223);
   border: 1.6px solid rgb(85, 175, 223);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 2px 7px;
+  border-radius: 2px;
+  transition: all 1.0s;
+  cursor: pointer;
+  margin-left: 2px;
+}
+.bottone1:hover{
+  color:rgb(85, 175, 223);
+  border: 1.6px solid white;
+  background-color: #fff;
+  border-top: 1.6px solid rgb(85, 175, 223);
+  border-right: 1.6px solid rgb(85, 175, 223);
+  border-bottom: 1.6px solid rgb(85, 175, 223);
 }
 
+
+/* PULSANTE REGISTRATI */
+
+.bottone2{
+  display: flex;
+  float:right;
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  background-color: darkorange;
+  border: 1.6px solid darkorange;
+  padding: 2px 7px;
+  border-radius: 2px;
+  transition: all 1.0s;
+  cursor: pointer;
+  margin-right: -22px;
+  margin-left: 40px;
+}
+.bottone2:hover{
+  border: 1.6px solid white;
+  color:darkorange;
+  background-color: #fff;
+  border-bottom: 1.6px solid darkorange;
+  border-left: 1.6px solid darkorange;
+  border-top: 1.6px solid darkorange;
+}
+
+
+/* PULSANTI MENU */
 
 .elenco{
   display: flex;
