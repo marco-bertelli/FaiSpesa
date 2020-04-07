@@ -15,6 +15,7 @@ export class DettaglioComponent implements OnInit {
   ngOnInit(): void {
     this.activateRoute.paramMap.subscribe(params=>{
       this.lista=this.list.getSingolo(params.get("id"));
+      console.log(this.lista);
     })
   }
 

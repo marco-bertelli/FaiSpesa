@@ -2,7 +2,7 @@
    
     <div *ngIf="listItem.username==utente">
         <p>{{listItem.nome}}</p>
-        <button routerLink="/dettaglio" >Dettaglio</button>
+        <button (click)="apriD(listItem.nome)" >Dettaglio</button>
     </div>
 
 </div>
