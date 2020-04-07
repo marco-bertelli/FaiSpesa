@@ -10,7 +10,8 @@ export class ListServiceService {
   private list:List[]=[
     //1
     {username:"marco",nome:"lista1",prodotti:[
-      {id:1,nome:"mele"}
+      {id:1,nome:"mele"},
+      {id:2,nome:"pere"}
     ],condivisioni:[]},
     //2
     {username:"carlo",nome:"lista2",prodotti:[
@@ -30,7 +31,7 @@ export class ListServiceService {
     });
     return null;
   }
-  
+
   getSingolo(nome){
     return this.list.find(item=>{
       return item.nome === nome;

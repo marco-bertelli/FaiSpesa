@@ -1,8 +1,10 @@
 <app-menu></app-menu>
 <div class="list-type5">
-    <ol>
-        <li>Nome: {{lista.nome}}</li>
-        <li>Descrizione: {{lista.prodotti}}</li>
-        
+   
+<p>Nome: {{lista.nome}}</p>
+<p>Prodotti: </p>
+    <ol> 
+        <li *ngFor="let prodotto of lista.prodotti">{{prodotto.nome}}</li>
     </ol>
+    
 </div>
