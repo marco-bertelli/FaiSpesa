@@ -13,7 +13,7 @@ export class PageNotFoundComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  returnToPrimo(){
+  returnToPrimo() {
     this.router.navigateByUrl('/home');
   }
 
