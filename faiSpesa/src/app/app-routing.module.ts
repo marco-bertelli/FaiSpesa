@@ -7,12 +7,14 @@ import { EditRouteGuard } from './services/guard/edit-route-guard.service';
 import { RegistrazioneComponent } from './registrazione/registrazione.component';
 import { FunzionalitaComponent } from './funzionalita/funzionalita.component';
 import { MyRouteGuardService } from './services/guard/my-route-guard.service';
+import { ListaComponent } from './lista/lista.component';
 
 
 const routes: Routes = [
     { path: 'login', component: LoginComponent,canActivate: [EditRouteGuard] },
     { path: 'home', component: HomeComponent },
     { path: 'funzionalita', component: FunzionalitaComponent, canActivate: [MyRouteGuardService]},
+    { path: 'lista', component: ListaComponent, canActivate: [MyRouteGuardService]},
    // { path: 'game-detail/:id', component: GameDetailComponent, canActivate: [MyRouteGuardService]},
     { path: 'registrati', component:RegistrazioneComponent, canActivate: [EditRouteGuard]},
     { path: '', redirectTo: '/home', pathMatch: 'full' },
