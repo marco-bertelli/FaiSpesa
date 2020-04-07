@@ -96,16 +96,24 @@ label {
 }
 
 button {
-  padding: 10px 62px;
+  padding: 10px 88px;
   margin-top:20px;
   margin-left: 30px;
   border: 1px solid white;
   border-radius: 4px;
-  color:#182157;
+  color: #000;
   background-color: white;
   font-weight:bold;
   font-size:16px;
   letter-spacing: 1px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+button:hover{
+  border: 1px solid white;
+  color:#fff;
+  background-color: #000;
 }
 
 footer {
