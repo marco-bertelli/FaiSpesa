@@ -1,4 +1,17 @@
 .bottone{
 display: flex;
 float:right;
+color:red;
+text-decoration: none;
+font-weight: bold;
+border: 1.6px solid white;
+padding: 2px 5px;
+border-radius: 4px;
+transition: all 1.0s;
+cursor: pointer;
+}
+.bottone:hover{
+  color: white;
+  background-color: darkorange;
+  border: 1.6px solid darkorange;
 }

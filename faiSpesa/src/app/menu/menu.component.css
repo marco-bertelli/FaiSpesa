@@ -1,4 +1,37 @@
-button {
-  border: 1px solid white;
-  background-color: darkmagenta;
+.bottone{
+  display: flex;
+  float:right;
+  color:rgb(85, 175, 223);
+  text-decoration: none;
+  font-weight: bold;
+  border: 1.6px solid white;
+  padding: 2px 7px;
+  border-radius: 4px;
+  transition: all 1.0s;
+  cursor: pointer;
 }
+.bottone:hover{
+  color: white;
+  background-color: rgb(85, 175, 223);
+  border: 1.6px solid rgb(85, 175, 223);
+}
+
+
+.elenco{
+  display: flex;
+  float:right;
+  color:#000;
+  text-decoration: none;
+  border: 1.6px solid white;
+  padding-right: 7px;
+  padding-left: 7px;
+  padding-bottom: 1px;
+  transition: all 1.0s;
+  cursor: pointer;
+  margin:3px;
+
+}
+.elenco:hover{
+  border-bottom: 1.6px solid #000;
+}
+
