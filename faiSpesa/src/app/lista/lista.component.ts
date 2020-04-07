@@ -18,10 +18,6 @@ export class ListaComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  getP(nome){
-    let result:Prodotto[];
-    //result.push(this.listService.getP(nome));
-    return result;
-  }
+  
 
 }

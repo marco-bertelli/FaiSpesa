@@ -11,6 +11,7 @@ import { RegistrazioneComponent } from './registrazione/registrazione.component'
 import { FunzionalitaComponent } from './funzionalita/funzionalita.component';
 import { ListaComponent } from './lista/lista.component';
 import { FooterComponent } from './footer/footer.component';
+import { DettaglioComponent } from './dettaglio/dettaglio.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FooterComponent } from './footer/footer.component';
     LoginComponent,
     FunzionalitaComponent,
     ListaComponent,
-    FooterComponent
+    FooterComponent,
+    DettaglioComponent
   ],
   imports: [
     BrowserModule,

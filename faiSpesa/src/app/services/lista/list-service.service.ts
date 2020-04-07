@@ -30,6 +30,11 @@ export class ListServiceService {
     });
     return null;
   }
+  getSingolo(nome){
+    return this.list.find(item=>{
+      return item.nome === nome;
+    })
+  }
 
   constructor() { }
 }

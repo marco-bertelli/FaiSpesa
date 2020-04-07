@@ -8,6 +8,7 @@ import { RegistrazioneComponent } from './registrazione/registrazione.component'
 import { FunzionalitaComponent } from './funzionalita/funzionalita.component';
 import { MyRouteGuardService } from './services/guard/my-route-guard.service';
 import { ListaComponent } from './lista/lista.component';
+import { DettaglioComponent } from './dettaglio/dettaglio.component';
 
 
 const routes: Routes = [
@@ -15,7 +16,7 @@ const routes: Routes = [
     { path: 'home', component: HomeComponent },
     { path: 'funzionalita', component: FunzionalitaComponent, canActivate: [MyRouteGuardService]},
     { path: 'lista', component: ListaComponent, canActivate: [MyRouteGuardService]},
-   // { path: 'game-detail/:id', component: GameDetailComponent, canActivate: [MyRouteGuardService]},
+    { path: 'dettaglio/:id', component: DettaglioComponent, canActivate: [MyRouteGuardService]},
     { path: 'registrati', component:RegistrazioneComponent, canActivate: [EditRouteGuard]},
     { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: '**', component: PageNotFoundComponent }

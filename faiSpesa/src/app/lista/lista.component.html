@@ -2,7 +2,7 @@
    
     <div *ngIf="listItem.username==utente">
         <p>{{listItem.nome}}</p>
-        <p *ngFor="let prodotto of getP(listItem.nome)">prodotto</p>
+        <button routerLink="/dettaglio" >Dettaglio</button>
     </div>
 
 </div>
