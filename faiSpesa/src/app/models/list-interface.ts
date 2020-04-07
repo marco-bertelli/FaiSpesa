@@ -1,5 +1,6 @@
 export interface List{
     username:string;
-    prodotti:[];
+    nome:string;
+    prodotti:string[];
     condivisioni:[];
 }
