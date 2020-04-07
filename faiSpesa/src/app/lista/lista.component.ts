@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ListServiceService } from '../services/lista/list-service.service';
 import { List } from '../models/list-interface';
+import { Prodotto } from '../models/prodotto-interface';
 
 @Component({
   selector: 'app-lista',
@@ -18,8 +19,9 @@ export class ListaComponent implements OnInit {
   ngOnInit(): void {
   }
   getP(nome){
-    console.log(nome);
-    return this.listService.getP(nome);
+    let result:Prodotto[];
+    //result.push(this.listService.getP(nome));
+    return result;
   }
 
 }
