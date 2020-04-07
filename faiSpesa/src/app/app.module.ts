@@ -10,6 +10,7 @@ import { LogoutComponent } from './logout/logout.component';
 import { RegistrazioneComponent } from './registrazione/registrazione.component';
 import { FunzionalitaComponent } from './funzionalita/funzionalita.component';
 import { ListaComponent } from './lista/lista.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ListaComponent } from './lista/lista.component';
     RegistrazioneComponent,
     LoginComponent,
     FunzionalitaComponent,
-    ListaComponent
+    ListaComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
