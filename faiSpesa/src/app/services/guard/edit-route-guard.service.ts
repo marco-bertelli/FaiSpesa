@@ -13,6 +13,7 @@ export class EditRouteGuard implements CanActivate {
     if (sessionStorage.getItem('user') === null ) {
       return true;
     } else {
+      window.alert("effettua il login per accedere a questa pagina");
       this.router.navigateByUrl('/home');
       return false;
     }

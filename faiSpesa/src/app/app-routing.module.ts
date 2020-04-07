@@ -5,12 +5,13 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { LoginComponent } from './login/login.component';
 import { EditRouteGuard } from './services/guard/edit-route-guard.service';
 import { RegistrazioneComponent } from './registrazione/registrazione.component';
+import { FunzionalitaComponent } from './funzionalita/funzionalita.component';
 
 
 const routes: Routes = [
     { path: 'login', component: LoginComponent,canActivate: [EditRouteGuard] },
     { path: 'home', component: HomeComponent },
-    //{ path: 'game-list', component: GameListComponent, canActivate: [MyRouteGuardService]},
+    { path: 'funzionalita', component: FunzionalitaComponent, canActivate: [EditRouteGuard]},
    // { path: 'game-detail/:id', component: GameDetailComponent, canActivate: [MyRouteGuardService]},
     { path: 'registrati', component:RegistrazioneComponent, canActivate: [EditRouteGuard]},
     { path: '', redirectTo: '/home', pathMatch: 'full' },
