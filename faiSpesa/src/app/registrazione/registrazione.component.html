@@ -1,12 +1,23 @@
 <div class="sfondo">
-    
-    <div>
+      <div id="left1"></div>
+      <div id="left2"></div>
+      <div id="left3"></div>
+
+    <div id="center">
+      <div id="top">
         <label>Username</label>
-        <input #username type="text">
-    </div>
-    <div>
+          <br/>
+        <input #username id="username" type="text">
+          <br/>
         <label>Password</label>
-        <input #password type="password">
+          <br/>
+        <input #password id="password" type="password">
+      </div>
+      <div id="bottom">
+          <button (click)="registra(username.value, password.value)">REGISTRATI</button>
+      </div>
     </div>
-    
-    <button (click)="registra(username.value, password.value)">Login</button>
+    <div id="right3"></div>
+    <div id="right2"></div>
+    <div id="right1"></div>
+</div>
