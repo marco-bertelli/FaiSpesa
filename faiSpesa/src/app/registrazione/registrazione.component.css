@@ -3,6 +3,7 @@
   display:grid;
   grid-template-columns: 33% 3% 3% 22% 3% 3% 33%;
   grid-template-rows: 200px 140px;
+  margin-bottom: 65px;
 }
 
 /*
@@ -114,8 +115,4 @@ button:hover{
   border: 1px solid white;
   color:#fff;
   background-color: #000;
-}
-
-footer {
-  margin-top:50px;
 }
