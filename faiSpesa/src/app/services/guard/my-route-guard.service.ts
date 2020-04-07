@@ -13,7 +13,8 @@ export class MyRouteGuardService implements CanActivate {
     if (sessionStorage.getItem('user') != null) {
       return true;
     } else {
-      this.router.navigateByUrl('/login');
+      window.alert("effettua il login per accedere a questa pagina");
+      this.router.navigateByUrl('/home');
       return false;
     }
   }
