@@ -37,6 +37,10 @@ export class ListServiceService {
       return item.nome === nome;
     })
   }
+  add(lista:List){
+    this.list.push(lista);
+
+  }
 
   constructor() { }
 }

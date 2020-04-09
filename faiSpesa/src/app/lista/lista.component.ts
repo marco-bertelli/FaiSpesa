@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ListServiceService } from '../services/lista/list-service.service';
 import { List } from '../models/list-interface';
 import { Prodotto } from '../models/prodotto-interface';
-import { FormGroup, FormBuilder, Validators, FormControl } from '@angular/forms';
+import { FormArray,FormGroup, FormBuilder, Validators, FormControl } from '@angular/forms';
 import { Router } from '@angular/router';
 
 @Component({
@@ -15,14 +15,26 @@ export class ListaComponent implements OnInit {
   lista:List[];
   crea=false;
   newSpesa:FormGroup;
+  prodotti;
+  
+    
 
 
   constructor(private listService:ListServiceService,private router: Router,private fb: FormBuilder) {
     this.lista=listService.getLista();
+
     this.newSpesa=this.fb.group({
-      username:sessionStorage.getItem('user'),
       nome:'',
+      prodotti: this.fb.array([
+        new FormGroup({
+          id: new FormControl(''),
+          nome: new FormControl('')
+        })
+      ]),
+      username:sessionStorage.getItem('user'),
+      
     });
+    this.prodotti = this.newSpesa.get('prodotti') as FormArray;
    }
   
   ngOnInit(): void {
@@ -37,7 +49,18 @@ export class ListaComponent implements OnInit {
   }
   //metodo per creare
   onSubmit(primiValori){
+    
+    this.listService.add(primiValori);
 
+    this.lista=this.listService.getLista();
+  }
+  aggiungiP(){
+    
+      this.prodotti.push(new FormGroup({
+        id: new FormControl(''),
+        nome: new FormControl('')
+      }));
+    
   }
 
 
