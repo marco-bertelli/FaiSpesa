@@ -6,11 +6,12 @@ import { FormArray,FormGroup, FormBuilder, Validators, FormControl } from '@angu
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-lista',
-  templateUrl: './lista.component.html',
-  styleUrls: ['./lista.component.css']
+  selector: 'app-crealista',
+  templateUrl: './crealista.component.html',
+  styleUrls: ['./crealista.component.css']
 })
-export class ListaComponent implements OnInit {
+export class CrealistaComponent implements OnInit {
+
   utente=sessionStorage.getItem('user');
   lista:List[];
   
@@ -40,9 +41,6 @@ export class ListaComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  apriD(id){
-    this.router.navigate(['/dettaglio',id]);
-  }
   
   //metodo per creare
   onSubmit(primiValori){
@@ -59,6 +57,4 @@ export class ListaComponent implements OnInit {
       }));
     
   }
-
-
 }

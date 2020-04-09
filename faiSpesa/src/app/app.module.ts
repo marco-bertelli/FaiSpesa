@@ -13,6 +13,7 @@ import { ListaComponent } from './lista/lista.component';
 import { FooterComponent } from './footer/footer.component';
 import { DettaglioComponent } from './dettaglio/dettaglio.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CrealistaComponent } from './crealista/crealista.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     FunzionalitaComponent,
     ListaComponent,
     FooterComponent,
-    DettaglioComponent
+    DettaglioComponent,
+    CrealistaComponent
   ],
   imports: [
     BrowserModule,
