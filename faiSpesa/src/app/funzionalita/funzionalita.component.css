@@ -1,0 +1,25 @@
+div {
+  border: 1px solid black;
+}
+.body {
+  display:grid;
+  grid-template-columns: 20% 30% 30% 20%;
+  grid-template-rows: 100px 300px 300px;
+}
+
+
+  /* POSIZIONAMENTO DIV */
+
+#top {
+  grid-row: 1;
+  grid-column: 1/5;
+}
+#left {
+  grid-row: 2/4;
+  grid-column: 1/2;
+}
+#right {
+  grid-row: 2/4;
+  grid-column: 4/5;
+}
+
