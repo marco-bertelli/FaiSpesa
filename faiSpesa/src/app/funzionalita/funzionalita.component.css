@@ -1,8 +1,8 @@
 .body {
   display:grid;
-  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-columns: 22% 25% 25% 22%;
   grid-template-rows: 100px 200px 200px;
-  grid-gap: 20px;
+  grid-gap: 32px;
   margin-bottom: 40px;
 }
 
@@ -72,7 +72,7 @@
 }
 
 #sx-top:hover, #dx-bottom:hover{
-  background-color: rgb(110, 150, 187);
+  background-color: rgb(45, 84, 121);
   text-shadow: 2px 2px 3px white;
 }
 #dx-top:hover, #sx-bottom:hover{
