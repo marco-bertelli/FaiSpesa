@@ -4,15 +4,17 @@
         <p>{{listItem.nome}}</p>
         <button (click)="apriD(listItem.nome)" >Dettaglio</button>
     </div>
-    <button (click)="visualizzaForm()" >Crea Lista</button>
 
+</div>
+<button (click)="visualizzaForm()" >Crea Lista</button>
 <div *ngIf="crea">
     <form (ngSubmit)="onSubmit(newSpesa.value)">
         <div >
             <label for="nome">Inserisci il nome della lista</label>
             <input type="text"  id="nome"  required formControlName="nome">
           </div>
+          <button type="submit">Submit</button>
     </form>
+    <button *ngIf="crea">AGGIUNGI PRODOTTI</button>
 </div>
 
-</div>

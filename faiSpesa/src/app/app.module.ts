@@ -12,6 +12,7 @@ import { FunzionalitaComponent } from './funzionalita/funzionalita.component';
 import { ListaComponent } from './lista/lista.component';
 import { FooterComponent } from './footer/footer.component';
 import { DettaglioComponent } from './dettaglio/dettaglio.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,8 @@ import { DettaglioComponent } from './dettaglio/dettaglio.component';
   ],
   imports: [
     BrowserModule,
+    FormsModule, 
+    ReactiveFormsModule,
     AppRoutingModule
   ],
   providers: [],
