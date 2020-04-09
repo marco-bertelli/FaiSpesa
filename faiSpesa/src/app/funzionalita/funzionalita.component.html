@@ -1,13 +1,15 @@
+<app-menu></app-menu>
+
 <div class="body">
     <div id="left"></div>
-    <div id="#top">
-      <a>benvenuto {{utente}}</a>
+    <div id="top">
+      <h1>Benvenuto {{utente}}!</h1>
     </div>
     <div id="sx-top">
       <a routerLink="/lista" routerLinkActive="active">Lista Spesa</a>
     </div>
     <div id="dx-top">
-      <a routerLink="/condividi" routerLinkActive="active">condividi lista</a>
+      <a routerLink="/condividi" routerLinkActive="active">Condividi lista</a>
     </div>
     <div id="sx-bottom">
       <a>Terza funzionalità</a>
@@ -19,6 +21,6 @@
 
 
         <!-- in caso funzionalità admin <li *ngIf="admin()" routerLink="/modifica" routerLinkActive="active">Modifica</li> -->
-        <a><app-logout></app-logout></a>
 </div>
 
+<app-footer></app-footer>
