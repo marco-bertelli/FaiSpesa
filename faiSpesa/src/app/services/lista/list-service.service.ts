@@ -47,7 +47,8 @@ export class ListServiceService {
     this.list.forEach(element => {
       if(element.nome===lista.nome){
         //funzione per modificare
-        element.nome=lista.name;
+        console.log(lista.prodotti)
+        element.nome=lista.nome;
         element.username=lista.username;
         element.prodotti=lista.prodotti;
       //aggiorna i singoli valori passato un elemento

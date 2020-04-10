@@ -18,9 +18,6 @@ export class ListaComponent implements OnInit {
   modifica:boolean;
   prodotti;
   
-    
-
-
   constructor(private listService:ListServiceService,private router: Router,private fb: FormBuilder) {
     this.lista=listService.getLista();
 
@@ -48,7 +45,8 @@ export class ListaComponent implements OnInit {
   
   //metodo per creare
   onSubmit(form){
-    //this.listService.modifica(form);
+    
+    this.listService.modifica(form);
   
   }
   aggiungiP(element){
@@ -80,6 +78,10 @@ export class ListaComponent implements OnInit {
     this.aggiungiP(temp.prodotti.pop());
     
   }
+  //toglie la form
+  this.modifica=false;
+  //avvisa l'utente della modifica
+  console.log("modifica effettuata");
  }
 
 
