@@ -47,6 +47,10 @@ export class ListaComponent implements OnInit {
   onSubmit(form){
     
     this.listService.modifica(form);
+    //toglie la form
+   this.modifica=false;
+    //avvisa l'utente della modifica
+    window.alert("modifica effettuata");
   
   }
   aggiungiP(element){
@@ -78,11 +82,7 @@ export class ListaComponent implements OnInit {
     this.aggiungiP(temp.prodotti.pop());
     
   }
-  //toglie la form
-  this.modifica=false;
-  //avvisa l'utente della modifica
-  console.log("modifica effettuata");
- }
+}
 
 
 }
