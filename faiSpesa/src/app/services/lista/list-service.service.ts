@@ -42,5 +42,18 @@ export class ListServiceService {
 
   }
 
+  modifica(lista){
+    
+    this.list.forEach(element => {
+      if(element.nome===lista.nome){
+        //funzione per modificare
+        element.nome=lista.name;
+        element.username=lista.username;
+        element.prodotti=lista.prodotti;
+      //aggiorna i singoli valori passato un elemento
+      }
+    });
+  }
+
   constructor() { }
 }

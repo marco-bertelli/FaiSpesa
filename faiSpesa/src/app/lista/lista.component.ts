@@ -15,6 +15,7 @@ export class ListaComponent implements OnInit {
   lista:List[];
   
   newSpesa:FormGroup;
+  modifica:boolean;
   prodotti;
   
     
@@ -25,19 +26,20 @@ export class ListaComponent implements OnInit {
 
     this.newSpesa=this.fb.group({
       nome:'',
-      prodotti: this.fb.array([
+      prodotti:  this.fb.array([
         new FormGroup({
           id: new FormControl(''),
           nome: new FormControl('')
         })
       ]),
-      username:sessionStorage.getItem('user'),
+      username:'',
       
     });
     this.prodotti = this.newSpesa.get('prodotti') as FormArray;
    }
   
   ngOnInit(): void {
+    this.modifica=false;
   }
 
   apriD(id){
@@ -45,20 +47,40 @@ export class ListaComponent implements OnInit {
   }
   
   //metodo per creare
-  onSubmit(primiValori){
+  onSubmit(form){
+    //this.listService.modifica(form);
+  
+  }
+  aggiungiP(element){
     
-    this.listService.add(primiValori);
+    this.prodotti.push(new FormGroup({
+      id: new FormControl(element.id),
+      nome: new FormControl(element.nome)
+    }));
+  
+}
+  //riempie la form con valori di baseee
+  riempiForm(nome){
+    this.modifica=true;
+    let temp:List=this.listService.getSingolo(nome);
+    //modifica la form con i valori
+    this.newSpesa=this.fb.group({
+      nome:temp.nome,
+      prodotti:this.fb.array([
+        
+      ]),
+      username:sessionStorage.getItem('user'),
+      
+    });
+    //aggiorna in tempo reale i prodotti presenti
+    this.prodotti = this.newSpesa.get('prodotti') as FormArray;
 
-    this.lista=this.listService.getLista();
-  }
-  aggiungiP(){
-    
-      this.prodotti.push(new FormGroup({
-        id: new FormControl(''),
-        nome: new FormControl('')
-      }));
+    //for per riempire i prodotti
+  for(let i=0;i<=temp.prodotti.length;i++){
+    this.aggiungiP(temp.prodotti.pop());
     
   }
+ }
 
 
 }
