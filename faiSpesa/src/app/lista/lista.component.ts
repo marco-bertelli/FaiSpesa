@@ -81,8 +81,12 @@ export class ListaComponent implements OnInit {
   for(let i=0;i<=temp.prodotti.length;i++){
     this.aggiungiP(temp.prodotti.pop());
     
+  }}
+  eliminaLista(nome){
+    this.listService.elimina(nome);
+    window.alert("eliminata!");
+    
   }
-}
 
 
 }

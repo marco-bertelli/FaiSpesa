@@ -55,6 +55,13 @@ export class ListServiceService {
       }
     });
   }
+  elimina(nomeLista){
+    this.list.forEach(element => {
+      if(element.nome===nomeLista){
+        element.username="";
+      }
+    });
+  }
 
   constructor() { }
 }
