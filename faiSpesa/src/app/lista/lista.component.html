@@ -13,9 +13,9 @@
       </div>
       <div class="grid1-bottom" *ngIf="listItem.username==utente"> <!-- DIV CONTENENTE I PULSANTI -->
 
-        <button class="button-top" (click)="apriD(listItem.nome)"> DETTAGLIO </button>
-        <button class="button-top" (click)="riempiForm(listItem.nome)"> MODIFICA </button>
-        <button class="button-top" (click)="eliminaLista(listItem.nome)"> ELIMINA </button>
+        <button class="buttons" (click)="apriD(listItem.nome)"> DETTAGLIO </button>
+        <button class="buttons" (click)="riempiForm(listItem.nome)"> MODIFICA </button>
+        <button class="buttons" id="button-elimina" (click)="eliminaLista(listItem.nome)"> ELIMINA </button>
 
       </div>
     </div>
@@ -24,23 +24,21 @@
   <form *ngIf="modifica" (ngSubmit)="onSubmit(newSpesa.value)" [formGroup]="newSpesa">
     <div class="grid2">
       <div class="grid2-top">
-        <label for="nome"> Inserisci il nome della lista </label>
-        <input type="text"  id="nome"  required formControlName="nome">
+        <label class="top-text" for="nome"> Inserisci il nome della lista </label>
+        <input id="nome"  required formControlName="nome">
       </div>
 
       <ng-container formArrayName="prodotti">
         <div class="grid2-center" *ngFor="let prodotto of prodotti.controls;index as i">
-          <div class="details">
-            <ng-container [formGroupName]="i">
-                ID: <input value="prova" formControlName="id" />
-                NOME: <input formControlName="nome" />
-            </ng-container>
-          </div>
+          <ng-container [formGroupName]="i">
+              <label class="bottom-text"> ID: </label> <input formControlName="id" />
+              <label class="bottom-text"> NOME: </label> <input formControlName="nome" />
+          </ng-container>
         </div>
       </ng-container>
 
       <div class="grid2-bottom">
-        <button type="submit"> CONFERMA </button>
+        <button class="buttons" id="button-conferma" type="submit"> CONFERMA </button>
       </div>
     </div>
   </form>
