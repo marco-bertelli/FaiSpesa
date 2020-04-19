@@ -66,17 +66,17 @@
 
   /* ELEMENTI DINAMICI */
 #sx-top:hover , #sx-bottom:hover , #dx-top:hover, #dx-bottom:hover {
-  box-shadow: 8px 8px 10px black;
   transition: all 1s;
+  box-shadow: 8px 8px 10px black;
   cursor: pointer;
   background-image: none;
 }
 
 #sx-top:hover, #dx-bottom:hover{
   background-color: rgb(45, 84, 121);
-  text-shadow: 2px 2px 3px white;
+  text-shadow: 3px 3px 1px white;
 }
 #dx-top:hover, #sx-bottom:hover{
   background-color: rgb(45, 84, 121);
-  text-shadow: 2px 2px 3px black;
+  text-shadow: 4px 4px 1px black;
 }

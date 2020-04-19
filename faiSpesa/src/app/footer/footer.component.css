@@ -1,0 +1,8 @@
+a:hover {
+  text-decoration: none;
+  color: rgb(34, 140, 238);
+  transition: all 0.4s;
+}
+p {
+  margin-left: 700px;
+}

@@ -44,7 +44,7 @@
 }
 .buttons:hover {
 
-  box-shadow: -6px -6px 10px rgb(37, 120, 230), 6px 6px 10px rgb(19, 26, 94);
+  box-shadow: -6px 6px 10px rgb(37, 120, 230), 6px -6px 10px rgb(19, 26, 94);
   transition: all 0.6s;
   background: linear-gradient(rgb(37, 120, 230), rgb(19, 26, 94));
   background-clip: text;
@@ -55,7 +55,7 @@
   background: linear-gradient(rgb(197, 142, 39), rgb(129, 19, 19));
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  box-shadow: -6px -6px 10px rgb(197, 142, 39), 6px 6px 10px rgb(129, 19, 19);
+  box-shadow: -6px 6px 10px rgb(197, 142, 39), 6px -6px 10px rgb(129, 19, 19);
   transition: all 0.6s;
 }
 
@@ -110,7 +110,7 @@
   background: linear-gradient(rgb(133, 219, 35), rgb(20, 121, 25));
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  box-shadow: -6px -6px 10px rgb(133, 219, 35), 6px 6px 10px rgb(20, 121, 25);
+  box-shadow: -6px 6px 2px rgb(133, 219, 35), 6px -6px 2px rgb(20, 121, 25);
   transition: all 0.6s;
 }
 
