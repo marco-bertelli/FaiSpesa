@@ -1,15 +1,26 @@
-<div *ngFor="let listItem of lista" >
-   
-    <div *ngIf="listItem.username==utente">
-        <p>{{listItem.nome}}</p>
-        <button (click)="apriD(listItem.nome)" >Dettaglio</button>
-        <button (click)="riempiForm(listItem.nome)">MODIFICA</button>
-        <button (click)="eliminaLista(listItem.nome)">Elimina</button>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
+
+<app-menu></app-menu>
+<div id="wrapper">
+
+  <div  *ngFor="let listItem of lista">
+    <div class="grid1">
+      <div class="grid1-top" *ngIf="listItem.username==utente"> <!-- DIV CONTENENTE IL NOME DELLA LISTA-->
+
+        <p class="list-name"> {{listItem.nome}}</p>
+
+      </div>
+      <div class="grid1-bottom" *ngIf="listItem.username==utente"> <!-- DIV CONTENENTE I PULSANTI -->
+
+        <button class="button-top" (click)="apriD(listItem.nome)"> DETTAGLIO </button>
+        <button class="button-top" (click)="riempiForm(listItem.nome)"> MODIFICA </button>
+        <button class="button-top" (click)="eliminaLista(listItem.nome)"> ELIMINA </button>
+
+      </div>
     </div>
+  </div>
 
-</div>
-
-<form *ngIf="modifica" (ngSubmit)="onSubmit(newSpesa.value)" [formGroup]="newSpesa">
+  <form *ngIf="modifica" (ngSubmit)="onSubmit(newSpesa.value)" [formGroup]="newSpesa">
     <div >
         <label for="nome">Inserisci il nome della lista</label>
         <input type="text"  id="nome"  required formControlName="nome">
@@ -22,10 +33,13 @@
                 NOME:<input formControlName="nome" />
               </ng-container>
         </div>
-        
+
     </ng-container>
-    
+
    <button type="submit">Submit</button>
-</form>
-{{newSpesa.value |json}}
+  </form>
+  {{newSpesa.value |json}}
+
+</div>
+ <app-footer></app-footer>
 

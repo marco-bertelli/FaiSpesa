@@ -1,0 +1,55 @@
+
+.grid1 {
+  display: grid;
+  grid-template-rows: 120px 120px;
+  width: 100%;
+}
+.grid1-top {
+  display: grid;
+  grid-row: 1;
+  background-image: url("https://jooinn.com/images/milky-green-blurred-background-2.jpg");
+  align-items: center;
+  justify-content: center;
+}
+.grid1-bottom {
+  display: flex;
+  justify-content: center;
+  grid-row: 2;
+}
+
+.list-name {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 2.5em;
+  margin-top: 0.28em;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 2px black;
+}
+
+.button-top {
+  cursor: pointer;
+  box-sizing: border-box;
+  padding: 20px 50px;
+  margin: 30px;
+  border: 1px solid transparent;
+  color: linear-gradient(rgb(207, 209, 218), rgb(0, 0, 0));
+  background-color: #fff;
+  font-family: 'Rubik', sans-serif;
+  font-weight:bold;
+  font-size: 1.2em;
+  letter-spacing: 0.7px;
+  border-radius: 2px;
+  box-shadow: -7px -7px 10px #000, 7px 7px 10px #000;
+}
+.button-top:hover {
+
+  box-shadow: -6px -6px 10px rgb(37, 120, 230), 6px 6px 10px rgb(19, 26, 94);
+  transition: all 0.6s;
+  background: linear-gradient(rgb(37, 120, 230), rgb(19, 26, 94));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.random {
+  background-color: limegreen;
+}
