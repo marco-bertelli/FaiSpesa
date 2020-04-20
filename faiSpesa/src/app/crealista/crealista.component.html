@@ -1,25 +1,43 @@
-<div>
-    <form (ngSubmit)="onSubmit(newSpesa.value)" [formGroup]="newSpesa">
-        <div >
-            <label for="nome">Inserisci il nome della lista</label>
-            <input type="text"  id="nome"  required formControlName="nome">
-        </div>
+<app-menu></app-menu>
 
-        <ng-container formArrayName="prodotti">
-            <div *ngFor="let prodotto of prodotti.controls;index as i">
-                <ng-container [formGroupName]="i">
-                    ID:<input value="prova" formControlName="id" />
-                    NOME:<input formControlName="nome" />
-                  </ng-container>
-            </div>
-            
+<form (ngSubmit)="onSubmit(newSpesa.value)" [formGroup]="newSpesa">
+  <div class="grid">
+    <div class="grid-header">
+      <h1> CREA UNA NUOVA LISTA </h1>
+    </div>
+    <div class="grid-top">
+
+      <label for="nome">Inserisci il nome della lista</label>
+      <input type="text"  id="nome"  required formControlName="nome">
+
+    </div>
+
+    <ng-container formArrayName="prodotti">
+      <div class="center" *ngFor="let prodotto of prodotti.controls;index as i">
+
+        <ng-container [formGroupName]="i">
+          <div class="grid-center">
+            <label> ID Prodotto: </label> <input value="prova" formControlName="id" /> <br>
+            <label> Nome prodotto: </label> <input formControlName="nome" />
+          </div>
         </ng-container>
-        
-       <button type="submit">Submit</button>
-    </form>
-{{newSpesa.value |json}}
-<button (click)="aggiungiP()">aggiungi P</button>
+
+      </div>
+    </ng-container>
+
+    <div class="grid-bottom">
+
+      <button id="button-crea" type="submit"> CREA LISTA </button>
+
+    </div>
+  </div>
+</form>
+
+<div class="bottom-button">
+
+  <button (click)="aggiungiP()"> AGGIUNGI PRODOTTO </button>
+
 </div>
 
-
+<app-footer></app-footer>
 
