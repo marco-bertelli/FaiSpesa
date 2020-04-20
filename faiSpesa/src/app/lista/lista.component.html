@@ -3,8 +3,8 @@
 <app-menu></app-menu>
 
 <div id="wrapper">
-
-  <div  *ngFor="let listItem of lista">
+<ng-container *ngIf="modifica==false" >
+  <div *ngFor="let listItem of lista">
     <div class="grid1">
       <div class="grid1-top" *ngIf="listItem.username==utente"> <!-- DIV CONTENENTE IL NOME DELLA LISTA-->
 
@@ -20,6 +20,7 @@
       </div>
     </div>
   </div>
+</ng-container>
 
   <form *ngIf="modifica" (ngSubmit)="onSubmit(newSpesa.value)" [formGroup]="newSpesa">
     <div class="grid2">
