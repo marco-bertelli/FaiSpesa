@@ -14,6 +14,7 @@ import { FooterComponent } from './footer/footer.component';
 import { DettaglioComponent } from './dettaglio/dettaglio.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CrealistaComponent } from './crealista/crealista.component';
+import { CondividiComponent } from './condividi/condividi.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { CrealistaComponent } from './crealista/crealista.component';
     ListaComponent,
     FooterComponent,
     DettaglioComponent,
-    CrealistaComponent
+    CrealistaComponent,
+    CondividiComponent
   ],
   imports: [
     BrowserModule,

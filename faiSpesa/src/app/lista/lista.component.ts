@@ -87,6 +87,18 @@ export class ListaComponent implements OnInit {
     window.alert("eliminata!");
     
   }
+  condivisione(condivisioni):boolean{
+    let result=false;
+    condivisioni.forEach(element => {
+     
+      if(element===this.utente){
+        console.log("ho ritornato true");
+        result=true;
+      }
+    });
+
+    return result;
+  }
 
 
 }

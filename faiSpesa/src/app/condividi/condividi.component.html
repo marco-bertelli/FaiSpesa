@@ -1,0 +1,17 @@
+<div id="wrapper">
+    
+      <div *ngFor="let listItem of lista">
+        <div class="grid1">
+          <div class="grid1-top" *ngIf="listItem.username==utente"> <!-- DIV CONTENENTE IL NOME DELLA LISTA-->
+    
+            <p class="list-name"> {{listItem.nome}} </p>
+            <!--nome da condividere -->
+            <input type="text" #nome>
+            <button (click)="condividi(listItem.nome,nome.value)">CONDIVIDI</button>
+          </div>
+           
+    
+          </div>
+        </div>
+      </div>
+    

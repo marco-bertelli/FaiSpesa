@@ -18,9 +18,14 @@
         <button class="buttons" id="button-elimina" (click)="eliminaLista(listItem.nome)"> ELIMINA </button>
 
       </div>
+      <ng-container *ngIf="condivisione(listItem.condivisioni)">
+        <h2>LISTE DEGLI AMICI</h2>
+        {{listItem.nome}}
+      </ng-container>
     </div>
   </div>
 </ng-container>
+
 
   <form *ngIf="modifica" (ngSubmit)="onSubmit(newSpesa.value)" [formGroup]="newSpesa">
     <div class="grid2">

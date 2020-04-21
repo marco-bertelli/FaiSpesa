@@ -10,6 +10,7 @@ import { MyRouteGuardService } from './services/guard/my-route-guard.service';
 import { ListaComponent } from './lista/lista.component';
 import { DettaglioComponent } from './dettaglio/dettaglio.component';
 import { CrealistaComponent } from './crealista/crealista.component';
+import { CondividiComponent } from './condividi/condividi.component';
 
 
 const routes: Routes = [
@@ -18,6 +19,7 @@ const routes: Routes = [
     { path: 'funzionalita', component: FunzionalitaComponent, canActivate: [MyRouteGuardService]},
     { path: 'crealista', component: CrealistaComponent, canActivate: [MyRouteGuardService]},
     { path: 'lista', component: ListaComponent, canActivate: [MyRouteGuardService]},
+    { path: 'condividi', component: CondividiComponent, canActivate: [MyRouteGuardService]},
     { path: 'dettaglio/:id', component: DettaglioComponent, canActivate: [MyRouteGuardService]},
     { path: 'registrati', component:RegistrazioneComponent, canActivate: [EditRouteGuard]},
     { path: '', redirectTo: '/home', pathMatch: 'full' },

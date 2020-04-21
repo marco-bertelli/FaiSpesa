@@ -33,6 +33,16 @@ export class LoginServiceService {
     
     return controllo;  
   }
+  controlloUtente(username:string){
+    let controllo=false;
+    
+    this.gameList.forEach(element => {
+      if(element.username===username) controllo=true;
+    });
+    
+    return controllo;
+
+  }
 
   eseguiLogin(username:string,password:string){
 

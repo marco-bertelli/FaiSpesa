@@ -51,8 +51,10 @@ export class ListServiceService {
         element.nome=lista.nome;
         element.username=lista.username;
         element.prodotti=lista.prodotti;
+        element.condivisioni=lista.condivisioni;
       //aggiorna i singoli valori passato un elemento
       }
+      console.log(element);
     });
   }
   elimina(nomeLista){
@@ -61,6 +63,12 @@ export class ListServiceService {
         element.username="";
       }
     });
+  }
+  aggiungiCondivisione(nomeLista,utente:string){
+    let temp:List;
+    temp=this.getSingolo(nomeLista);
+    temp.condivisioni.push(utente);
+    this.modifica(temp);
   }
 
   constructor() { }
