@@ -1,0 +1,126 @@
+ /* STYLING PARTE SUPERIORE */
+
+ .grid1 {
+  display: grid;
+  grid-template-rows: 120px 120px;
+  width: 100%;
+}
+.grid1-top {
+  display: grid;
+  grid-row: 1;
+  background-image: url("https://jooinn.com/images/milky-green-blurred-background-2.jpg");
+  align-items: center;
+  justify-content: center;
+}
+.grid1-bottom {
+  display: flex;
+  justify-content: center;
+  grid-row: 2;
+}
+
+.list-name {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 2.5em;
+  margin-top: 0.28em;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 2px black;
+}
+
+.buttons {
+  cursor: pointer;
+  box-sizing: border-box;
+  padding: 20px 50px;
+  margin: 30px;
+  border: 1px solid transparent;
+  color: linear-gradient(rgb(207, 209, 218), rgb(0, 0, 0));
+  background-color: #fff;
+  font-family: 'Rubik', sans-serif;
+  font-weight:bold;
+  font-size: 1.2em;
+  letter-spacing: 0.7px;
+  border-radius: 2px;
+  box-shadow: -7px -7px 10px #000, 7px 7px 10px #000;
+}
+.buttons:hover {
+
+  box-shadow: -6px 6px 10px rgb(37, 120, 230), 6px -6px 10px rgb(19, 26, 94);
+  transition: all 0.6s;
+  background: linear-gradient(rgb(37, 120, 230), rgb(19, 26, 94));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#button-elimina:hover {
+  background: linear-gradient(rgb(197, 142, 39), rgb(129, 19, 19));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  box-shadow: -6px 6px 10px rgb(197, 142, 39), 6px -6px 10px rgb(129, 19, 19);
+  transition: all 0.6s;
+}
+
+
+  /* STYLING PARTE INFERIORE */
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 5% 90% 5%;
+  grid-template-rows: 100px;
+  grid-gap: 14px;
+  margin-bottom: 40px;
+}
+.grid2-top {
+  grid-column: 1/4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid2-center {
+  grid-column: 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  background-image: url("https://wallpaperaccess.com/full/1217013.jpg");
+  background-size: auto;
+  border-radius: 4px;
+  box-shadow: 0px 0px 12px #000;
+  margin-bottom: 8px;
+}
+.grid2-bottom {
+  grid-column: 1/4;
+  display: flex;
+  justify-content: center;
+}
+
+.top-text {
+  color: #000;
+  font-size: 1.2em;
+  margin-right: 20px;
+  font-weight: thick;
+}
+.bottom-text {
+  color: #fff;
+  letter-spacing: 0.8px;
+  margin-right: 6px;
+  font-weight: bold;
+}
+
+#button-conferma:hover {
+  background: linear-gradient(rgb(133, 219, 35), rgb(20, 121, 25));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  box-shadow: -6px 6px 2px rgb(133, 219, 35), 6px -6px 2px rgb(20, 121, 25);
+  transition: all 0.6s;
+}
+
+input {
+  text-transform: capitalize;
+  border-radius: 4px;
+  border: 0px;
+  padding: 10px 40px;
+  margin-right: 16px;
+  box-shadow: inset 0px 0px 6px #000;
+  height: 30px;
+  margin-top: 44px;
+}
