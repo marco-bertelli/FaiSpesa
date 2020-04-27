@@ -1,0 +1,134 @@
+ /* STYLING PARTE SUPERIORE */
+
+ .grid1 {
+  display: grid;
+  grid-template-rows: 120px 1fr;
+  width: 100%;
+}
+.grid1-top {
+  display: grid;
+  grid-row: 1;
+  background-image: url("https://jooinn.com/images/milky-green-blurred-background-2.jpg");
+  align-items: center;
+  justify-content: center;
+}
+.grid1-bottom {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 2fr;
+  grid-row: 2;
+  color: #000;
+  text-transform: capitalize;
+  background-position: center;
+  background: url("https://media.istockphoto.com/vectors/tea-and-sweets-vector-seamless-pattern-on-exercise-book-background-vector-id512626187");
+}
+.bottom-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: 2;
+  font-size: 1.8em;
+  text-shadow: 2px -2px 1px rgb(255, 255, 255);
+}
+.bottom-left p {
+  background-color: #fff;
+  padding: 1px 8px;
+  border-radius: 4px;
+}
+.bottom-right {
+  display: flex;
+  align-items: center;
+  grid-column: 3;
+  margin-top: 18px;
+}
+
+.list-name {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 2.5em;
+  margin-top: 0.28em;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 2px black;
+}
+
+.buttons {
+  cursor: pointer;
+  box-sizing: border-box;
+  padding: 20px 50px;
+  margin: 30px;
+  border: 1px solid transparent;
+  color: linear-gradient(rgb(207, 209, 218), rgb(0, 0, 0));
+  background-color: #fff;
+  font-family: 'Rubik', sans-serif;
+  font-weight:bold;
+  font-size: 1.2em;
+  letter-spacing: 0.7px;
+  border-radius: 2px;
+  box-shadow: -7px -7px 10px #000, 7px 7px 10px #000;
+}
+.buttons:hover {
+
+  box-shadow: -6px 6px 10px rgb(37, 120, 230), 6px -6px 10px rgb(19, 26, 94);
+  transition: all 0.6s;
+  background: linear-gradient(rgb(37, 120, 230), rgb(19, 26, 94));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#button-elimina:hover {
+  background: linear-gradient(rgb(197, 142, 39), rgb(129, 19, 19));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  box-shadow: -6px 6px 10px rgb(197, 142, 39), 6px -6px 10px rgb(129, 19, 19);
+  transition: all 0.6s;
+}
+
+
+  /* STYLING PARTE INFERIORE */
+
+.top-text {
+  color: #000;
+  font-size: 1.2em;
+  margin-right: 20px;
+  font-weight: thick;
+}
+.bottom-text {
+  color: #fff;
+  letter-spacing: 0.8px;
+  margin-right: 6px;
+  font-weight: bold;
+}
+
+#button-conferma:hover {
+  background: linear-gradient(rgb(133, 219, 35), rgb(20, 121, 25));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  box-shadow: -6px 6px 2px rgb(133, 219, 35), 6px -6px 2px rgb(20, 121, 25);
+  transition: all 0.6s;
+}
+
+input {
+  text-transform: capitalize;
+  border-radius: 4px;
+  border: 0px;
+  padding: 10px 40px;
+  margin-right: 16px;
+  box-shadow: inset 0px 0px 6px #000;
+  height: 30px;
+  margin-top: 44px;
+}
+ .prodotto-id {
+   padding: 8px 24px;
+   background-color: rgb(146, 146, 146);
+   border-radius: 20%;
+   margin-right: 14px;
+   color: white;
+
+ }
+ .prodotto-nome {
+   font-size: 1.2em;
+   padding: 8px 8px;
+   padding-right: 10px;
+   background-color: #fff;
+   border-radius: 20%;
+   box-shadow: 0px 4px 4px black;
+ }
