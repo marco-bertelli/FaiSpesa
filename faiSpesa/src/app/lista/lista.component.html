@@ -37,7 +37,7 @@
       <ng-container formArrayName="prodotti">
         <div class="grid2-center" *ngFor="let prodotto of prodotti.controls;index as i">
           <ng-container [formGroupName]="i">
-              <label class="bottom-text"> ID: </label> <input formControlName="id" />
+              <label class="bottom-text"> ID: </label> <input formControlName="id" value="i" />
               <label class="bottom-text"> NOME: </label> <input formControlName="nome" />
           </ng-container>
         </div>
