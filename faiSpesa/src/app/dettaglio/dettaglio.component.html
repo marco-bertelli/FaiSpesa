@@ -1,10 +1,22 @@
 <app-menu></app-menu>
-<div class="list-type5">
-   
-<p>Nome: {{lista.nome}}</p>
-<p>Prodotti: </p>
-    <ol> 
-        <li *ngFor="let prodotto of lista.prodotti">{{prodotto.nome}}</li>
-    </ol>
-    
+<div class="grid1">
+  <div class="grid1-top"> <!-- DIV CONTENENTE IL NOME DELLA LISTA-->
+
+    <p class="list-name"> {{lista.nome}} </p>
+  </div>
+  <div class="grid1-bottom">
+    <div class="bottom-left">
+      <p>PRODOTTI: </p>
+    </div>
+    <div class="bottom-right">
+      <ol>
+        <p class="prodotto-nome" *ngFor="let prodotto of lista.prodotti">
+          <span class="prodotto-id">{{prodotto.id}}</span>
+          {{prodotto.nome}}</p>
+      </ol>
+    </div>
+
+  </div>
+
+
 </div>

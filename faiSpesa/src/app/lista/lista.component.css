@@ -122,3 +122,25 @@ input {
   margin-right: 16px;
   box-shadow: inset 0px 0px 6px #000;
 }
+
+.amici-label {
+  margin-left: 30px;
+  font-size: 2.4em;
+  text-shadow: 2px 2px 1px rgb(20, 121, 25);
+  color: black;
+  font-weight: bolder;
+}
+.amici-lista {
+  margin-left: 40px;
+  text-transform: capitalize;
+  border: 1.6px solid green;
+  border-radius: 4px;
+  color: green;
+  padding: 3px 8px;
+}
+.nomelistacondivisa {
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
