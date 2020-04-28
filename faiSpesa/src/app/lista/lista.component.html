@@ -20,7 +20,10 @@
       </div>
       <ng-container *ngIf="condivisione(listItem.condivisioni)">
         <h2 class="amici-label">LISTE DEGLI AMICI</h2>
-        <p class="amici-lista">{{listItem.nome}}</p>
+        <div class="nomelistacondivisa">
+          <p class="amici-lista">{{listItem.nome}}</p>
+        </div>
+
       </ng-container>
     </div>
   </div>

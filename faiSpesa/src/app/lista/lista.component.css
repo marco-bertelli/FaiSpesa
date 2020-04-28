@@ -137,5 +137,10 @@ input {
   border-radius: 4px;
   color: green;
   padding: 3px 8px;
-
+}
+.nomelistacondivisa {
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
